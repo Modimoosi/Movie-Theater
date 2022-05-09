@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head>
+        <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<title>MOD THEATRES</title>
+
+<body>
+    <div class="main">
+        <nav>
+    
+            <img src="images/WEBlogo.png" class="logo">
+    <ul>
+        <li><a href ="home.html">HOME</a></li>
+        <li><a href="Movies.html">Movies</a></li>
+        <li><a href="Calender.html">showtimes</a></li>
+        <li><a href="contacts.html">contacts</a></li>
+        <li><a href="Tickets.html">Tickets</a></li>
+        <li><a href="About US.html">ABOUT US</a></li>
+
+    </ul>
+</nav>
+    </div>
+    
+    <div class="motto">
+   the ultimate movie theatre in Botswana.
+    </div>
+<div class="shows">
+  <h1>Showing this week</h1>
+</div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/sonic.jpg">
+      <div class="text">
+        <h1>Sonic Hedghog 2</h1>
+
+        <br><h2>WED</h2>
+        <br>After settling in Green Hills,</br>
+         Sonic is eager to prove that he </br>
+         has what it takes to be a true hero.</br>
+         His test comes when Dr. Robotnik</br>
+         returns with a new partner, Knuckles,</br> 
+         in search of a mystical emerald that</br>
+         has the power to destroy civilizations.</br>
+         Sonic teams up with his own sidekick,</br> 
+         Tails, and together they embark on a</br>
+         globe-trotting journey to find the</br>
+        emerald before it falls into the</br>
+        wrong hands.</br>
+
+        <br>Animation |2022 | 13+| 2hrs 2mins | P500</br>
+
+        starring | Jim Carrey,</br>
+        <br></br>
+
+           <a class="btn4" href="#">get Tickets</a></li>  </div>
+      
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/scream.jpg" style="width:100%">
+      <div class="text"><br>
+        <h1>Scream</h1></br>
+
+        Twenty-five years after a streak</br>
+        of brutal murders shocked the </br>
+        quiet town of Woodsboro, Calif.,</br>
+         a new killer dons the Ghostface </br>
+         mask and begins targeting a group</br>
+         of teenagers to resurrect secrets</br> 
+        from the town's deadly past.</br>
+
+        Runtime:	1h 54m
+      </br>
+      p880<a class="btn4" href="#">get Tickets</a></li> </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/lego.jpg" style="width:100%">
+      <div class="text">
+      2014 | 7+ | 1h 40m | Children & Family Movies</br>
+      After being mistaken for the LEGO MasterBuilder,</br>
+      ordinary mini-guy Emmet is swept up in an urgent</br>
+       quest to thwart the evil plans of Lord Business.</br>
+
+      Starring:Chris Pratt, Elizabeth Banks, Will Arnett</br>
+        
+        
+        
+        
+
+        <a class="btn4" href="#">get Tickets</a></li> </div>
+    </div>
+
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <div class="bottominfo">
+  welcome to mod movie thetre one of the newest and busiest cinemas
+  with fuly digital soround sound and air conditioned audiotoriums.
+
+  we also offer a number of snacks  in our kiosk
+
+<div class="snack-container">
+  <div class = "snack-box">
+  <div class="snack-image">
+      <img src="images/snack3.jpg">
+  </div>
+  <div class="snack-call">
+ 
+  </div>
+  </div>
+
+  <div class = "snack-box">
+  <div class="snack-image">
+  <img src="images/snack1.jpg">
+  </div>
+  <div class="movie-call">
+ 
+  </div>
+  </div>
+
+  <div class = "snack-box">
+    <div class="snack-image">
+    <img src="images/snack2.jpg">
+    </div>
+    <div class="snack-call">
+   
+    </div>
+    </div>
+
+
+
+</div>
+</div>
+
+
+  <a class="btn4" href="#">give us Feedback</a></li>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <h3>MOD MOVIE THEATRE</h3>
+            <p>FAQ
+                Terms & Conditions
+                Privacy
+                All rights reserved</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; 2022 Mod Movie Theatres. designed by <span>MOD</span></p>
+        </div>
+</footer>
+
+
+</body>
+</html>
